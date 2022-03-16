@@ -48,7 +48,16 @@ footer {
     height: 40px;
 }
 
-
 #messages {
     height: 20px;
+}
+
+.player {
+    background-color: lightblue;
+    float: left;
+    width: 45%;
+}
+
+#player-image {
+    width: 75%;
 }
