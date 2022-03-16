@@ -22,16 +22,31 @@ for (let button of buttons) {
   });
 }
 
+/**
+ * The Man game function. accepts parameter which 
+ * is data choice of the selected button 
+ */
 
+function playGame(playerChoice) {
 
-possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
-  userChoice = e.target.id
-  userChoiceDisplay.innerHTML = userChoice
-  generateComputerChoice()
-  getResult()
-}))
+  playerImage.src = `assets/images/${choices[playerChoice]}.png`;
+  playerImage.alt = choices[playerChoice];
+}
 
-function generateComputerChoice() {
+let computerChoice = Math.floor(Math.random() * 3 );
+
+computerImage.src = `assets/images/${choices[computerChoice]}.png`;
+computerImage.alt = choices[computerChoice];
+
+let result = checkWinner(choices[computerChoice], choices[playerChoices]);
+
+updateScore(result);
+
+/**
+ * end 
+ */
+
+ function generateComputerChoice() {
   const randomNumber = Math.floor(Math.random() * 3) + 1 // or you can use possibleChoices.length
   
   if (randomNumber === 1) {
@@ -70,3 +85,4 @@ function getResult() {
     }
     resultDisplay.innerHTML = result
   }
+
