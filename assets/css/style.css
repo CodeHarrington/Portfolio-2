@@ -1,3 +1,54 @@
-body h2 {
-    color: red;
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+
+/* main set up */
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    font-family: 'Otomanopee One', sans-serif;
+    margin: 0;
+}
+
+/* Header ans footer */
+
+header {
+    text-align: center;
+    height: 50px;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    min-height: 80px;
+    padding-top: 5px;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+}
+
+/* Game area */
+
+.game-area {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    text-align: center;
+}
+
+.control {
+    display: inline-block;
+    margin: 2px;
+    width: 80px;
+    height: 40px;
+}
+
+
+#messages {
+    height: 20px;
 }
