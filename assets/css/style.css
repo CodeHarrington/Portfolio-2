@@ -22,9 +22,9 @@ footer {
     position: absolute;
     width: 100%;
     left: 0;
-    bottom: 0;
+    bottom: 20px;
     box-sizing: border-box;
-    min-height: 80px;
+    min-height: 100px;
     padding-top: 5px;
     text-align: center;
     color: #fff;
@@ -58,6 +58,13 @@ footer {
     width: 45%;
 }
 
-#player-image {
+#player-image #computer-image {
     width: 75%;
+}
+
+.computer {
+    background-color: lightcoral;
+    float: right;
+    width: 45%;
+
 }
